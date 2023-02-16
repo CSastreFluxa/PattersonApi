@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterson.WebApi", "Patterson.WebApi\Patterson.WebApi.csproj", "{EF85843C-5105-4879-A36F-F4CEA8BE9A98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patterson.WebApi", "Patterson.WebApi\Patterson.WebApi.csproj", "{EF85843C-5105-4879-A36F-F4CEA8BE9A98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterson.Domain", "Patterson.Domain\Patterson.Domain.csproj", "{84E31492-E47D-4257-A8AC-DD0FAA033FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patterson.Domain", "Patterson.Domain\Patterson.Domain.csproj", "{84E31492-E47D-4257-A8AC-DD0FAA033FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterson.Application", "Patterson.Application\Patterson.Application.csproj", "{834F79C8-45F6-4D88-B438-ADA8FDB43388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patterson.Application", "Patterson.Application\Patterson.Application.csproj", "{834F79C8-45F6-4D88-B438-ADA8FDB43388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterson.Infrastructure", "Patterson.Infrastructure\Patterson.Infrastructure.csproj", "{6C043B4D-6F5D-40FE-9E9D-15FCC42E7ED5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patterson.Infrastructure", "Patterson.Infrastructure\Patterson.Infrastructure.csproj", "{6C043B4D-6F5D-40FE-9E9D-15FCC42E7ED5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{2C78636A-FD46-41DF-9C98-8A9980380E21}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D6B3C053-223E-45F0-9232-76F2008CD282}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{7D2A9EC7-F74A-41D3-959F-FA7DA1DAA60D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{445DC16E-7109-4A05-A6ED-C080CFAE0D95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterson.Tests", "Patterson.Tests\Patterson.Tests.csproj", "{BE720B0B-A464-4858-A279-EC2C3A11E197}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{6C043B4D-6F5D-40FE-9E9D-15FCC42E7ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C043B4D-6F5D-40FE-9E9D-15FCC42E7ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C043B4D-6F5D-40FE-9E9D-15FCC42E7ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE720B0B-A464-4858-A279-EC2C3A11E197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE720B0B-A464-4858-A279-EC2C3A11E197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE720B0B-A464-4858-A279-EC2C3A11E197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE720B0B-A464-4858-A279-EC2C3A11E197}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{84E31492-E47D-4257-A8AC-DD0FAA033FA7} = {2C78636A-FD46-41DF-9C98-8A9980380E21}
 		{834F79C8-45F6-4D88-B438-ADA8FDB43388} = {2C78636A-FD46-41DF-9C98-8A9980380E21}
 		{6C043B4D-6F5D-40FE-9E9D-15FCC42E7ED5} = {D6B3C053-223E-45F0-9232-76F2008CD282}
+		{BE720B0B-A464-4858-A279-EC2C3A11E197} = {445DC16E-7109-4A05-A6ED-C080CFAE0D95}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0BDAC64E-99B9-4018-9AE9-259811E18BD7}

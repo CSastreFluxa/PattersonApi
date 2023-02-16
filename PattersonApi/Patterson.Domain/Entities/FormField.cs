@@ -8,6 +8,6 @@ namespace Patterson.Domain.Entities
         public Guid FormId { get; set; }
         public Guid FieldId { get; set; }
         public Field Field { get; set; }
-        public string Response { get; set; }
+        public string Answer { get; set; }
     }
 }

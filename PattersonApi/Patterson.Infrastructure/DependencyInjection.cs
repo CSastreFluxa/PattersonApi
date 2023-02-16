@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Patterson.Application.Interfaces.Services;
@@ -20,6 +21,9 @@ namespace Patterson.Infrastructure
             if (usersDbConnectionString == "InMemory")
             {
                 services.AddDbContext<UserDbContext>(options => options.UseInMemoryDatabase(databaseName: "UsersDatabase"));
+            } else if (usersDbConnectionString == "InMemoryNewRoot")
+            {
+                services.AddDbContext<UserDbContext>(options => options.UseInMemoryDatabase(databaseName: "UsersDatabase", new InMemoryDatabaseRoot()));
             }
             else
             {
@@ -30,7 +34,7 @@ namespace Patterson.Infrastructure
 
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
-            services.AddScoped<IUserDbContext>(provider => provider.GetService<UserDbContext>());
+            services.AddTransient<IUserDbContext>(provider => provider.GetService<UserDbContext>());
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IFormService, FormService>();
